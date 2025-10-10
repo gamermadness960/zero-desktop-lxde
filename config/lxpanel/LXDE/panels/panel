@@ -1,0 +1,60 @@
+Global {
+  edge=bottom
+  allign=left
+  margin=0
+  widthtype=percent
+  width=100
+  height=28
+  transparent=0
+  tintcolor=#ffffff
+  alpha=0
+  autohide=0
+  heightwhenhidden=2
+  setdocktype=1
+  setpartialstrut=1
+  usefontcolor=0
+  fontsize=10
+}
+
+Plugin {
+  type=menu
+  Config {
+    image=/usr/share/lxde/images/lxde-icon.png
+    system {
+      logout=1
+      lockscreen=1
+      reboot=1
+      shutdown=1
+    }
+  }
+}
+
+Plugin {
+  type=launchbar
+  Config {
+    Button {
+      id=lxterminal.desktop
+    }
+    Button {
+      id=pcmanfm.desktop
+    }
+  }
+}
+
+Plugin {
+  type=taskbar
+}
+
+Plugin {
+  type=tray
+}
+
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=1
+    Foreground=#000000
+  }
+}

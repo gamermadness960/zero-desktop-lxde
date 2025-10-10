@@ -1,0 +1,20 @@
+services:
+  desktop-lxde:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zero-desktop-lxde
+    ports:
+      - "5900:5900"
+    environment:
+      - SYSTEM_USER=docker
+      - VNC_PASS=letmein
+      - RESOLUTION=1280x720
+    healthcheck:
+      test: ["CMD", "sh", "-c", "netstat -tuln | grep -q ':5900'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+
