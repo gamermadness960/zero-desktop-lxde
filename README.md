@@ -1,5 +1,10 @@
 # zero-desktop-lxde
 
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+![GitHub Tag](https://img.shields.io/github/v/tag/zero-desktop/zero-desktop-lxde?label=version&include_prereleases)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-desktop/zero-desktop-lxde/build.yml?branch=main)
+![Platforms](https://img.shields.io/badge/platform-linux%2Famd64%20%7C%20linux%2Farm64-lightgrey)
+
 Lightweight LXDE desktop environment accessible via VNC.
 
 ## Quick Start
