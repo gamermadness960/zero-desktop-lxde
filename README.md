@@ -19,6 +19,8 @@ docker run -d \
 
 Connect with any VNC client to `localhost:5900`
 
+> **Note:** This project is distributed via GitHub Container Registry (ghcr.io) only. Not available on Docker Hub.
+
 ## Environment Variables
 
 | Variable | Default | Description |
