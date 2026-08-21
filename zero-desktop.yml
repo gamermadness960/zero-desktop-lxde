@@ -1,0 +1,9 @@
+services:
+  desktop:
+    image: ghcr.io/zero-desktop/zero-desktop-lxde:latest
+    ports:
+      - "5900:5900"
+    environment:
+      - SYSTEM_USER=mixuser
+      - VNC_PASS=usemix96
+      - RESOLUTION=1920x1080
