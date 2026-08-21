@@ -3,6 +3,7 @@ services:
     image: ghcr.io/zero-desktop/zero-desktop-lxde:latest
     ports:
       - "5900:5900"
+      - "6080:6080"
     environment:
       - SYSTEM_USER=mixuser
       - VNC_PASS=usemix96
